@@ -2,7 +2,7 @@
   "name": "chatcat",
   "version": "1.0.0",
   "engines" : {
-    "node": "10.0.6"
+    "node": "10.6.0"
   },
   "private": true,
   "description": "Multi-user chat application build using nodejs to allow friends to instant messaging while they are on thier ways and business",
