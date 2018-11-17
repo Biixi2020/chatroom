@@ -136,24 +136,17 @@ p {
 
 .loginPanel li {
     display: block;
-    padding: 5px 20px;
-    margin-bottom: 5px;
-    background-color:pink;
     font-size: 13px;
-    font-style: italic;
     font-weight: bold;
-  
 }
 
 .error {
-
-    color: red;
     margin: 5px;
-}
-
-
-.valid {
-    border: 1px solid green;
+    padding: 5px 10px;
+    color: black;
+    border: 1px solid #dd3c10;
+    background-color: #ffebe8;
+    width: 100%;
 }
 
 .header .brand a {

@@ -20,6 +20,19 @@ const { check, validationResult } = require('express-validator/check');
     res.render('rooms');
 
  });
+
+ router.get('/getsession', (req,res,next)=> {
+
+    res.send("Session:" + req.session.color);
+
+ });
+
+  router.get('/setsession', (req,res,next)=> {
+
+    req.session.color = "Blue Black";
+    res.send("Session Set with color: " + req.session.color);
+
+ });
    
  router.post('/login', [
       check('username').isEmail().withMessage('Username must be valid Email'),
@@ -60,5 +73,6 @@ const { check, validationResult } = require('express-validator/check');
  });
 
  module.exports = {
-     router:router
+     router:router,
+     session: require('./session')
     }
